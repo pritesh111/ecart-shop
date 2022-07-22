@@ -40,18 +40,19 @@ function ready(){
     for (var i = 0; i < addCart.length; i++){
         var button = addCart[i];
         button.addEventListener('click', addCartClicked);
-    }
+    } 
     // buy button working
     document.getElementsByClassName("btn-buy")[0].addEventListener('click', buyButtonClicked);
 }
 
 //buy button
 function buyButtonClicked(){
-    alert("Congralulations!!Your order is placed.")
+    
     var cartContent = document.getElementsByClassName('cart-content')[0];
     while (cartContent.hasChildNodes()){
         cartContent.removeChild(cartContent.firstChild);
     }
+    updateTotal();
 }
 
 
@@ -124,8 +125,6 @@ function updateTotal(){
     }
         //if price of some item is in decimal then
         total = Math.round(total * 100) / 100;
-
-        document.getElementsByClassName("total-price")[0].innerText = '$' + total;
-
-    
+        document.getElementsByClassName("total-price")[0].innerText = '$' + total;    
 }
+

@@ -30,6 +30,12 @@ body{
     color: var(--text-color);
 }
 
+.slider-div{
+    width: 100%;
+    height: 350px;
+    margin-top: 8rem;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -51,17 +57,48 @@ header{
     max-width: 1080px;
     margin: auto;
     width: 100%;
+    
+}
+
+.categories{
+    width: 100%;
+    height: 120px;
+    margin-top: 6rem;
+}
+
+.category-img{
+    
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+      
+}
+
+.category-img:hover{
+    cursor: pointer;
+    padding: 5px;
+    border: solid 2px #0d6efd;
+}
+/*
+var(--bs-link-color)
+*/
+.categories .container .row .col h5{
+    text-align: center;
+    padding-top: 10px;
 }
 
 .logo{
     font-size: 2rem;
-    color: var(--text-color);
+    color: white;
     font-weight: 400;
 }
+
 
 #cart-icon{
     font-size: 1.8rem;
     cursor: pointer;
+    color: white;
 }
 
 section{
@@ -69,9 +106,10 @@ section{
 }
 
 .section-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
+    color: black;
 }
 
 .shop{
@@ -81,12 +119,13 @@ section{
 .shop-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .product-box{
     position: relative;
 }
+
 
 .product-box:hover{
     padding: 10px;
@@ -94,11 +133,19 @@ section{
     transition: 0.4s;
 }
 
+
+
 .product-img{
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
 }
+
+.product-img:hover{
+    cursor: pointer;
+}
+
+
 
 .product-title{
     font-size: 1.1rem;
@@ -233,24 +280,9 @@ section{
 
 }
 
-.brands{
-    margin:  100px auto;
-  }
 
-  .col-5{
-    width: 160px;
-  }
-  
-.col-5 img{
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(100%);
-  }
-  
-.col-5 img:hover{
-    filter: grayscale(0);
-  }
-  
+
+
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -267,3 +299,116 @@ section{
     justify-content: space-around;
   }
 
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid 2px #A3DA8D;
+  }
+  
+  .featureIcon {
+    width: 50px;
+    height: 50px;
+ 
+  }
+  
+  .featureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .featureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+  
+  .brands{
+    margin:  50px auto;
+  }
+  
+  
+  .brand-img{
+    width: 160px;
+    cursor: pointer;
+  }
+  
+  .brand-img:hover{
+    padding: 10px;
+  }
+
+ .second-text{
+    color: #0d6efd;
+ }
+
+/*footer */
+
+footer {
+    display: flex;
+  }
+  
+  .footerLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+
+  .fMenuTitle {
+    font-size: 16px;
+  }
+  
+  .fList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .fListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .footerRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .fInput {
+    padding: 5px;
+  }
+  
+  .fButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .fIcons{
+    display: flex;
+  }
+  
+  .fIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .copyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+    
+  
